@@ -7,9 +7,9 @@ const Expenses = props => {
   return (
     <Card className="expenses">
       { props.expenses.map((expense, index) => <ExpenseItem key={index}
-                                                            date={expense.date}
-                                                            title={expense.title} 
-                                                            amount={expense.amount} />) }
+                                                          date={expense.date}
+                                                          title={expense.title} 
+                                                          amount={expense.amount} />) }
     </Card>
   );
 };
